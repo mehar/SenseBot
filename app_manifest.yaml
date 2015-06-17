@@ -1,0 +1,31 @@
+manifest-version: 1.0
+ 
+info:
+  name: SenseBot
+  description: "Periodically poll sensors and report their value as json on port 8080"
+  version: "5.0"
+  author-link: "http://www.cisco.com"
+  author-name: "Cisco Systems"
+ 
+app:
+  # Indicate app type (vm, paas, lxc etc.,)
+  apptype: paas
+ 
+  resources:
+    cpu: 55
+    memory: 100
+    disk: 10
+
+  network:
+    ports: [8080]
+
+  # Specify runtime and startup
+  startup:
+    runtime: java
+    runtime-version: 1.8
+    java-options: -Dio.netty.allocator.maxOrder=5
+    runtime-options:
+      classpath: .:./*:lib/*:resources/*:classes/
+
+    target: ToyJavaApp
+
