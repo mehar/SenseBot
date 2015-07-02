@@ -3,7 +3,7 @@ manifest-version: 1.0
 info:
   name: SenseBot
   description: "Periodically poll sensors and report their value as json on port 8080"
-  version: "1.0"
+  version: "2.0"
   author-link: "http://www.cisco.com"
   author-name: "Cisco Systems"
  
