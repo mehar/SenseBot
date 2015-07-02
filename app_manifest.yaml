@@ -19,7 +19,7 @@ app:
   network:
     ports: [8080]
 
-  depends-on: [{service-uri: "iox:middleware:core", min-api-version : 1, required:true}, {service-uri: "iox:middleware:stream-analytics", min-api-version: 1, required: true}]
+  depends-on: [{service-uri: "iox:middleware:core", min-api-version: 1, required: true}, {service-uri: "iox:middleware:stream-analytics", min-api-version: 1, required: true}]
 
   # Specify runtime and startup
   startup:
