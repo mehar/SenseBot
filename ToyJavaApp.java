@@ -44,7 +44,7 @@ import io.netty.handler.logging.LoggingHandler;
 public final class ToyJavaApp {
 
     public static void main(String[] args) throws Exception {
-        
+	
         // Configure the server.
         EventLoopGroup bossGroup = new NioEventLoopGroup(1);
         EventLoopGroup workerGroup = new NioEventLoopGroup();
@@ -62,6 +62,20 @@ public final class ToyJavaApp {
             bossGroup.shutdownGracefully();
             workerGroup.shutdownGracefully();
         }
+
+	while(true)
+	{
+		System.out.println("Hello World");
+
+		try
+		{
+			Thread.sleep(2000);
+		}
+		catch(Exception e)
+		{
+			// Ignore
+		}
+	}
     }
 }
 
