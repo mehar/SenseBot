@@ -27,7 +27,7 @@ app:
     runtime-version: 1.8
     java-options: -Dio.netty.allocator.maxOrder=5
     runtime-options:
-      classpath: .:./*:lib/*:resources/*:classes/
+      classpath: .:$CAF_APP_PATH/*:$CAF_APP_PATH/lib/*:$CAF_APP_PATH/resources/*:$CAF_APP_PATH/classes/
 
     target: ToyJavaApp
 
