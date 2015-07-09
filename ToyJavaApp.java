@@ -46,7 +46,7 @@ public final class ToyJavaApp {
     public static void main(String[] args) throws Exception {
 	
         // Configure the server.
-        EventLoopGroup bossGroup = new NioEventLoopGroup(1);
+        /*EventLoopGroup bossGroup = new NioEventLoopGroup(1);
         EventLoopGroup workerGroup = new NioEventLoopGroup();
         try {
             ServerBootstrap b = new ServerBootstrap();
@@ -62,7 +62,7 @@ public final class ToyJavaApp {
             bossGroup.shutdownGracefully();
             workerGroup.shutdownGracefully();
         }
-
+	*/
 	while(true)
 	{
 		System.out.println("Hello World");
