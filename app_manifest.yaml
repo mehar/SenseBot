@@ -19,8 +19,6 @@ app:
   network:
     ports: [8080]
 
-  depends-on: [{service-uri: "iox:middleware:core", min-api-version: 1, required: true}, {service-uri: "iox:middleware:service:stream-analytics", min-api-version: 1, required: true}]
-
   # Specify runtime and startup
   startup:
     runtime: java
